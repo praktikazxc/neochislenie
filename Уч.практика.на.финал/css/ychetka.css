@@ -1,0 +1,472 @@
+@font-face {
+    font-family: 'Courier New';
+    src: url('../fonts/Montserrat-Italic.ttf') format('truetype');
+    font-style: normal;
+}
+body {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #8c882c;
+
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+    background:url(Chevrolet_2018-19_Camaro_SS_Red_Metallic_566753_1280x854.jpg) center no-repeat;
+    background-size: cover;
+    
+}
+
+.header_inner {
+    display: flex;
+    align-items: center;
+}
+
+.header_logo {
+    display: flex;
+    justify-content: center;
+
+    margin-left: 250px;
+    box-sizing: border-box;
+    width: 200px;
+    font-size: 28px;
+    font-family: 'Courier New', Times, serif;
+    color: #de2147;
+
+    border-bottom: 1px solid #b8b100;
+    
+}
+.nav {
+    display: flex;
+    gap: 70px;
+    margin-right: 30px;
+    box-sizing: border-box;
+    font-size: 18;
+    font-family: 'Impact';
+    font-weight: 700;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+
+    color:#cbde21;
+    text-decoration:none;
+    margin-top: 15px;
+
+    transition:color#9b1717 .1s linear;
+}
+.nav_link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color:#cbde21;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav_link:hover {
+    color: #9b1717;
+}
+
+.nav_link:hover:after,
+.nav_link.active:after {
+    opacity: 1;
+}
+
+.nav_link.active {
+    color: #ffc800;
+}
+/* Container */
+.container {
+    width: 100%;
+    max-width:1630px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+}
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Intro */
+    .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 95vh;
+    }
+    /* Button */
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid #9b1717;
+    margin-left: 1200px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+;
+    transition: .1s linear, color .1s linear;
+    
+}
+.btn:hover {
+    background-color:#fff;
+    color: #9b1717;
+}
+.sign {
+    color:#990066;
+    
+}
+.slogan {
+font-size: 30px;
+margin-top: -200px;
+font-weight: 700;
+text-transform: uppercase;
+text-align: center;
+text-shadow: 5px 10px 10px rgb(0, 0, 0);
+color: #fff;
+
+
+}
+.intro_inner {
+font-size: 20px;
+margin-top: 0px;
+font-weight: 900;
+text-transform: uppercase;
+text-align: center;
+text-shadow: 5px 10px 10px rgb(0, 0, 0);
+color:darkred;
+
+
+}
+
+
+.kab{
+    font-size: 40px;
+     font-family: 'Courier New';
+    margin-left: 450px;
+    color: yellow;
+    font-family: 'Courier New', Times, serif;
+}
+
+.box{
+    width: 1000px;
+    padding: 300px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
+    border-radius: 18%;
+}
+
+.info{
+    position:absolute;
+    margin-top:-10%;
+    margin-left:-19%;
+    font-style:italic;
+    font-family: 'Courier New', Times, serif;
+}
+.info2{
+    position:absolute;
+    margin-top:-10%;
+    margin-left:10px;
+    font-style:italic;
+    font-family: 'Courier New', Times, serif;
+}
+.avatar{
+    position:absolute;
+    left: 80px;
+    top: 50px;
+    width: 150px;
+    height: 150px;
+}
+
+
+.info3{
+    position:absolute;
+    margin-top:-145px;
+    margin-left:-50px;
+    font-style:italic;
+    font-family: 'Courier New', Times, serif;
+    color: greenyellow;
+}
+
+
+.box2{
+    width: 300px;
+    padding: 100px;
+    top: 4%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    background:green;
+    text-align: center;
+    border-radius: 18%;
+}
+
+
+.his{
+
+    position: absolute;
+    width: 2px;
+    height: 590px;
+    left: 496px;
+    top: -12px;
+
+    background: red;
+    border-radius: 20px;
+
+}
+
+.text{
+
+    position: absolute;
+    left: 630px;
+    top: -5px;
+
+    font-family: 'Courier New', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 47px;
+    text-align: center;
+
+    color:yellow;
+    
+}
+
+.his1{
+
+    position: absolute;
+    width: 645px;
+    height: 3px;
+    left: 426px;
+    top: 100px;
+    
+
+    
+    border-radius: 25px;
+
+    font-family: 'Courier New', Times, serif;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #ffffff;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.his2{
+
+   position: absolute;
+    width: 645px;
+    height: 3px;
+    left: 426px;
+    top: 250px;
+    
+
+    
+    border-radius: 25px;
+
+    font-family: 'Courier New', Times, serif;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #ffffff;
+    padding: 10px 10px 10px 10px;
+}
+
+.his3{
+
+    position: absolute;
+    width: 645px;
+    height: 3px;
+    left: 426px;
+    top: 450px;
+    
+
+    
+    border-radius: 25px;
+
+    font-family: 'Courier New', Times, serif;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #ffffff;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.histpop{
+    font-family: 'Courier New', Times, serif;
+    position: absolute;
+    width: 905px;
+    height: 40px;
+    left: 912px;
+    top: 396px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 47px;
+    
+
+    color: #000000;
+    
+}
+.histpop:hover{
+    color: #cf1c1c;
+}
+
+.PODVAL{
+
+	position: absolute;
+	width: 1680px;
+	height: 130px;
+	left: -100px;
+	top: 700px;
+    font-family: 'Courier New', Times, serif;
+
+	background:  #191919;
+    color: red;
+
+}
+
+.s1{
+    position: absolute;
+	left: 654px;
+	top: 770px;
+    font-family: 'Courier New', Times, serif;
+    color: yellow;
+    
+}
+
+.s2{
+    position: absolute;
+	left: 880px;
+	top: 770px;
+    font-family: 'Courier New', Times, serif;
+     color: yellow
+}
+
+.s3{
+    position: absolute;
+	left: 800px;
+	top: 770px;
+    font-family: 'Courier New', Times, serif;
+     color: yellow
+}
+
+.s4{
+    position: absolute;
+	left: 724px;
+	top: 770px;
+    font-family: 'Courier New', Times, serif;
+     color: yellow
+}
+
+.number{
+    position: absolute;
+	left: 54px;
+	top: 735px;
+    font-family: 'Courier New', Times, serif;
+    color: yellow;
+     color: yellow;
+    font-size: 28px;
+}
+
+
+.s5{
+    position: absolute;
+	left: 750px;
+	top: 810px;
+    font-family: 'Courier New', Times, serif;
+     color: yellow
+    
+}
+
+.s1s2s3s4:hover {
+    color: #9b1717;
+}
+
+.s1s2s3s4:hover:after,
+.s1s2s3s4.active:after {
+    opacity: 1;
+}
+
+.s1s2s3s4.active {
+    color: #ffc800;
+}
+
+.видео{
+    position: absolute;
+	width: 440px;
+	height: 450px;
+	left: 1050px;
+	top: -70px;
+   
+}
+
+.his44{
+     position: absolute;
+	width: 440px;
+	
+	left: 1050px;
+	top: 270px;
+    color: yellow;
+}
+
+
+.btn {
+    
+    vertical-align: top;
+    padding: 8px 30px;
+    top: 550px;
+    position: absolute;
+    border: 3px solid #9b1717;
+    margin-left: 475px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .1s linear, color .1s linear;
+    background:#191919; 
+    
+}
+.btn:hover {
+    background-color:#fff;
+    color: #9b1717;
+}

@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:black;
+    width: 100% ;
+	height: 100vh ;
+	background: url(Chevrolet_2018-19_Camaro_SS_Red_Metallic_566753_1280x854.jpg) center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+    font-family: 'Patrick Hand', cursive;
+    
+
+}
+
+.box{
+    width: 700px;
+    padding: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
+    border-radius: 18%;
+}
+
+.box h1{
+    color: red;
+    text-transform: uppercase;
+    font-family: 'cursive';
+    src: url('../fonts/Montserrat-Italic.ttf') format('truetype');
+    font-style: normal;
+    
+}
+
+.box input[type = "text"],.box input[type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #e3da2b;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25;
+}
+
+box input[type = "text"]:focus,.box input[type = "password"]:focus{
+    width: 240px;
+    border-color:red;
+    
+}
+
+.box input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #e3da2b;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25;
+    cursor: pointer;
+    
+}
+
+
+.box p{
+    color: red;
+}
+
+
+
+.box input[type = "submit"]hover{
+    background: #e4c92f;
+}

@@ -1,0 +1,591 @@
+@font-face {
+    font-family: 'Courier New';
+    src: url('../fonts/Montserrat-Italic.ttf') format('truetype');
+    font-style: normal;
+}
+body {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #8c882c;
+
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+    background:url(Chevrolet_2018-19_Camaro_SS_Red_Metallic_566753_1280x854.jpg) center no-repeat;
+    background-size: cover;
+    
+}
+
+.header_inner {
+    display: flex;
+    align-items: center;
+}
+
+.header_logo {
+    display: flex;
+    justify-content: center;
+
+    margin-left: 250px;
+    box-sizing: border-box;
+    width: 200px;
+    font-size: 28px;
+    font-family: 'Courier New', Times, serif;
+    color: #de2147;
+
+    border-bottom: 1px solid #b8b100;
+    
+}
+.nav {
+    display: flex;
+    gap: 70px;
+    margin-right: 30px;
+    box-sizing: border-box;
+    font-size: 18;
+    font-family: 'Impact';
+    font-weight: 700;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+
+    color:#cbde21;
+    text-decoration:none;
+    margin-top: 15px;
+
+    transition:color#9b1717 .1s linear;
+}
+.nav_link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color:#cbde21;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav_link:hover {
+    color: #9b1717;
+}
+
+.nav_link:hover:after,
+.nav_link.active:after {
+    opacity: 1;
+}
+
+.nav_link.active {
+    color: #ffc800;
+}
+/* Container */
+.container {
+    width: 100%;
+    max-width:1630px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+}
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Intro */
+    .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 95vh;
+    }
+    /* Button */
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid #9b1717;
+    margin-left: 1200px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+;
+    transition: .1s linear, color .1s linear;
+    
+}
+.btn:hover {
+    background-color:#fff;
+    color: #9b1717;
+}
+.sign {
+    color:#990066;
+    
+}
+.slogan {
+font-size: 30px;
+margin-top: -200px;
+font-weight: 700;
+text-transform: uppercase;
+text-align: center;
+text-shadow: 5px 10px 10px rgb(0, 0, 0);
+color: #fff;
+
+
+}
+.intro_inner {
+font-size: 20px;
+margin-top: 0px;
+font-weight: 900;
+text-transform: uppercase;
+text-align: center;
+text-shadow: 5px 10px 10px rgb(0, 0, 0);
+color:darkred;
+
+
+}
+
+
+
+.p{
+    font-size: 25px;
+    
+}
+
+
+.PODVAL{
+
+	position: absolute;
+	width: 1670px;
+	height: 130px;
+	left: -7px;
+	top: 800px;
+    font-family: 'Courier New', Times, serif;
+
+	background:  #191919;
+
+}
+
+.s1{
+    position: absolute;
+	left: 946px;
+	top: 890px;
+    font-family: 'Courier New', Times, serif;
+    color: yellow;
+    
+}
+
+.s2{
+    position: absolute;
+	left: 890px;
+	top: 890px;
+    font-family: 'Courier New', Times, serif;
+     color: yellow
+}
+
+.s3{
+    position: absolute;
+	left: 810px;
+	top: 890px;
+    font-family: 'Courier New', Times, serif;
+     color: yellow
+}
+
+.s4{
+    position: absolute;
+	left: 734px;
+	top: 890px;
+    font-family: 'Courier New', Times, serif;
+     color: yellow
+}
+
+.number{
+    position: absolute;
+	left: 54px;
+	top: 824px;
+    font-family: 'Courier New', Times, serif;
+    color: yellow;
+     color: yellow;
+    font-size: 28px;
+}
+
+
+.s5{
+    position: absolute;
+	left: 850px;
+	top: 850px;
+    font-family: 'Courier New', Times, serif;
+     color: yellow
+    
+}
+
+.s1s2s3s4:hover {
+    color: #9b1717;
+}
+
+.s1s2s3s4ss1:hover:after,
+.s1s2s3s4ss1.active:after {
+    opacity: 1;
+}
+
+.s1s2s3s4ss1.active {
+    color: #ffc800;
+}
+
+
+.ss1{
+     position: absolute;
+	left: 724px;
+	top: 820px;
+    font-family: 'Courier New', Times, serif;
+     color: yellow
+}
+
+
+.текст2{
+
+	position: absolute;
+	width: 500px;
+	height: 40px;
+	left: 500px;
+	top: 50px;
+
+	font-family: 'Courier New', Times, serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 47px;
+
+	color:red;
+}
+
+.класс{
+
+	position: absolute;
+	width: 215px;
+	height: 37px;
+	left: 510px;
+	top: 200px;
+
+	background: yellow;
+	border-radius: 10px;
+
+	font-family: 'Courier New', Times, serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 47px;
+	color: red;
+
+}
+
+.марк{
+
+	position: absolute;
+	width: 215px;
+	height: 37px;
+	left: 510px;
+	top: 255px;
+
+	background: yellow;
+	border-radius: 10px;
+
+	font-family: 'Courier New', Times, serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 27px;
+	line-height: 47px;
+
+	color: red;
+
+}
+
+.тип{
+
+	position: absolute;
+	width: 215px;
+	height: 37px;
+	left: 510px;
+	top: 310px;
+
+	background: yellow;
+	border-radius: 10px;
+
+	font-family: 'Courier New', Times, serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 47px;
+
+	color: red;
+
+}
+
+.год{
+
+	position: absolute;
+	width: 215px;
+	height: 37px;
+	left: 510px;
+	top: 363px;
+
+	background: yellow;
+	border-radius: 10px;
+
+	font-family: 'Courier New', Times, serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 47px;
+
+	color: red;
+}
+
+.выбор{
+
+	position: absolute;
+	width: 215px;
+	height: 37px;
+	left: 510px;
+	top: 410px;
+
+	background: yellow;
+	border-radius: 100px;
+
+	font-family: 'Courier New', Times, serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 47px;
+
+	color: grey;
+
+}
+.выбор:hover{
+	background: red; }
+
+
+.видео{
+    position: absolute;
+	width: 440px;
+	height: 450px;
+	left: 50px;
+	top: 0px;
+   
+}
+
+.dogovor{
+    position: absolute;
+    top: 355px;
+    color: yellow;
+    left: 30px;
+    background: grey;
+    border-radius: 50px;
+    width: 470px;
+}
+.т3{
+
+	position: absolute;
+	width: 500px;
+	height: 40px;
+	left: 1100px;
+	top: 50px;
+
+	font-family: 'Courier New', Times, serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 47px;
+
+	color:red;
+
+}
+
+
+
+.nnn1{
+
+	position: absolute;
+	width: 560px;
+	height: 44px;
+	left: 900px;
+	top: 123px;
+
+	background: #b8b8b7;
+	border-radius: 5px;
+
+	font-family:  'Courier New', Times, serif;
+	font-style: normal;
+	font-weight: 350;
+	font-size: 14px;
+	line-height: 47px;
+
+	color:yellow;
+}
+
+.nn1{
+
+	position: absolute;
+	width: 650px;
+	height: 280px;
+	left: 750px;
+	top: 180px;
+
+	background: #7e7e7c;
+	border-radius: 10px;
+	
+	padding: 10px 10px 10px 10px;
+
+	font-family:  'Courier New', Times, serif;
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 13px;
+	line-height: 47px;
+
+	color: yellow;
+}
+
+
+.k1{
+
+	position: absolute;
+	width: 250px;
+	height: 200px;
+	left: 1410px;
+	top: 195px;
+
+	border-radius: 5px;
+}
+
+
+
+
+
+.btn:hover {
+    background-color:#fff;
+    color: #9b1717;
+}
+
+.new1{
+    position: absolute;
+	width: 650px;
+	height: 280px;
+	left: 750px;
+	top: 520px;
+
+	background: #7e7e7c;
+	border-radius: 10px;
+	
+	padding: 10px 10px 10px 10px;
+
+	font-family:  'Courier New', Times, serif;
+	font-style: normal;
+	font-weight: 270px;
+	font-size: 13px;
+	line-height: 47px;
+
+	color: yellow;
+    
+    
+}
+    
+
+
+
+.new3{
+
+	position: absolute;
+	width: 500px;
+	height: 44px;
+	left: 750px;
+	top: 465px;
+
+	background: #b8b8b7;
+	border-radius: 5px;
+
+	font-family:  'Courier New', Times, serif;
+	font-style: normal;
+	font-weight: 350;
+	font-size: 14px;
+	line-height: 47px;
+
+	color:yellow;
+}
+
+    
+.k2{
+
+	position: absolute;
+	width: 250px;
+	height: 200px;
+	left: 1410px;
+	top: 535px;
+
+	border-radius: 5px;
+}
+
+
+.btn1{
+    position: absolute;
+    top: 770px;
+    vertical-align: top;
+    padding: 8px 30px;
+    border: 3px solid #9b1717;
+    margin-left: 1380px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+;
+    transition: .1s linear, color .1s linear;
+       
+}
+
+.btn1:hover{
+	background-color:#fff;
+    color: #9b1717; }
+
+.btn {
+   position: absolute;
+    top: 420px;
+    vertical-align: top;
+    padding: 8px 30px;
+    border: 3px solid #9b1717;
+    margin-left: 1380px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+;
+    transition: .1s linear, color .1s linear;
+    
+}
+
+
+    
